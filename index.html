@@ -1,5 +1,57 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8">
+    <title>Nouvel onglet</title>
+    <style>
+      body {
+        background: #35363A;
+        margin: 0;
+      }
+
+      #backgroundImage {
+        border: none;
+        height: 100%;
+        pointer-events: none;
+        position: fixed;
+        top: 0;
+        visibility: hidden;
+        width: 100%;
+      }
+
+      [show-background-image] #backgroundImage {
+        visibility: visible;
+      }
+    </style>
+    <script type="text/javascript">
+    (function() {
+        window.sib = {
+            equeue: [],
+            client_key: "1hjco4xyjog9p6vvp8eyzpc1"
+        };
+        /* OPTIONAL: email for identify request*/
+        // window.sib.email_id = 'example@domain.com';
+        window.sendinblue = {};
+        for (var j = ['track', 'identify', 'trackLink', 'page'], i = 0; i < j.length; i++) {
+        (function(k) {
+            window.sendinblue[k] = function() {
+                var arg = Array.prototype.slice.call(arguments);
+                (window.sib[k] || function() {
+                        var t = {};
+                        t[k] = arg;
+                        window.sib.equeue.push(t);
+                    })(arg[0], arg[1], arg[2]);
+                };
+            })(j[i]);
+        }
+        var n = document.createElement("script"),
+            i = document.getElementsByTagName("script")[0];
+            n.type = "text/javascript", n.id = "sendinblue-js",
+            n.async = !0, n.src = "https://sibautomation.com/sa.js?key="+ window.sib.client_key,
+            i.parentNode.insertBefore(n, i), window.sendinblue.page();
+    })();
+    </script>
+  </head>
 <body>
 
 <h1>The Green Yoga</h1>
