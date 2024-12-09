@@ -4,14 +4,14 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
+    color: #2c2c2c;
+    background-color: #fffdf6;
 }
 
 /* Header styles */
 header {
-    background: #3a774e;
-    color: white;
+    background: #036842;
+    color: #fffdf6;
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
@@ -30,12 +30,8 @@ nav ul {
     gap: 1rem;
 }
 
-nav ul li {
-    display: inline;
-}
-
 nav ul li a {
-    color: white;
+    color: #fffdf6;
     text-decoration: none;
 }
 
@@ -45,10 +41,20 @@ nav ul li a:hover {
 
 /* Hero section styles */
 .hero {
+    position: relative;
+    height: 60vh;
+    background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fffdf6;
     text-align: center;
-    background: #8bc34a;
-    color: white;
-    padding: 3rem 1rem;
+}
+
+.hero-overlay {
+    background: rgba(3, 104, 66, 0.7);
+    padding: 2rem;
+    border-radius: 10px;
 }
 
 .hero h2 {
@@ -64,37 +70,57 @@ nav ul li a:hover {
 .hero .btn {
     display: inline-block;
     padding: 0.5rem 1.5rem;
-    background: #3a774e;
-    color: white;
+    background: #2c2c2c;
+    color: #fffdf6;
     text-decoration: none;
     border-radius: 5px;
+    font-weight: bold;
 }
 
 .hero .btn:hover {
-    background: #2e5e3b;
+    background: #036842;
+    border: 1px solid #fffdf6;
 }
 
 /* About section */
-#about {
-    padding: 2rem 1rem;
-    background: white;
-    text-align: center;
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    background: #fffdf6;
 }
 
-#about h2 {
+.about-content {
+    flex: 1;
+    text-align: left;
+}
+
+.about-content h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
+    color: #036842;
 }
 
-#about p {
+.about-content p {
     font-size: 1.1rem;
-    color: #666;
+    color: #2c2c2c;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
 }
 
 /* Footer styles */
 footer {
     text-align: center;
-    background: #3a774e;
-    color: white;
+    background: #036842;
+    color: #fffdf6;
     padding: 1rem 0;
 }
