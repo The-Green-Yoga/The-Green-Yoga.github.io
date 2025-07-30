@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buy Yoga Mats</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #8BC34A;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
+      padding: 20px;
+    }
+    .product {
+      background: white;
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .product h2 {
+      margin-top: 0;
+    }
+    .buy-button {
+      display: inline-block;
+      background: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .buy-button:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Buy High-Quality Yoga Mats</h1>
+    <p>Find your perfect mat for balance, comfort, and durability</p>
+  </header>
+
+  <main>
+    <div class="product">
+      <h2>Eco-Friendly Yoga Mat</h2>
+      <p>Made from sustainable materials. Non-slip and perfect for all levels.</p>
+      <a href="#" class="buy-button">Buy Now</a>
+    </div>
+
+    <div class="product">
+      <h2>Extra Thick Yoga Mat</h2>
+      <p>Ideal for extra cushioning during tough poses. 10mm thick support.</p>
+      <a href="#" class="buy-button">Buy Now</a>
+    </div>
+
+    <div class="product">
+      <h2>Travel Yoga Mat</h2>
+      <p>Lightweight and foldable. Great for practicing yoga on the go.</p>
+      <a href="#" class="buy-button">Buy Now</a>
+    </div>
+  </main>
+
+</body>
+</html>
